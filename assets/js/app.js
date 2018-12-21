@@ -5,7 +5,7 @@ $("#finish").hide();
 var number = 60;
 var intervalId;
 var correct = 0;
-var incorrect = 0
+var incorrect = 0;
 var result = correct/(correct+incorrect);
 
 $("#beginTimer").on("click", run);
