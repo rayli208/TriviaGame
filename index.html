@@ -36,50 +36,40 @@
         <div class="card-header"><h1>Space Questions</h1></div>
         <div class="card-body">
           <div class="container mb-3">
-              <h2>Timer: <span id="timer">60</span> seconds</h2>
-              <hr>
-              <form>
-                  <h4>Number 5:</h4>
-                  <fieldset id="group1" class="mb-3">
-                    1 <input type="radio" value="value1" name="group1">
-                    2 <input type="radio" value="value2" name="group1">
-                    3 <input type="radio" value="value3" name="group1">
-                    5 <input id="correct1" type="radio" value="value4" name="group1">
-                  </fieldset>
-
-                  <h4>Color Green:</h4>                
-                  <fieldset id="group2" class="mb-3">
-                    Green <input id="correct2" type="radio" value="value1" name="group2">
-                    Blue <input type="radio" value="value2" name="group2">
-                    Silver <input type="radio" value="value3" name="group2">
-                    Brown <input type="radio" value="value4" name="group2">
-                  </fieldset>
-
-                  <h4>Right</h4>                
-                  <fieldset id="group3" class="mb-3">
-                      Wrong <input type="radio" value="value1" name="group3">
-                      Wrong <input type="radio" value="value2" name="group3">
-                      Right <input id="correct3" type="radio" value="value3" name="group3">
-                      Wrong <input type="radio" value="value4" name="group3">
-                    </fieldset>
-
-                    <h4>Right</h4>                
-                    <fieldset id="group4" class="mb-3">
-                        Right <input id="correct4" type="radio" value="value1" name="group4">
-                        Wrong <input type="radio" value="value2" name="group4">
-                        Wrong <input type="radio" value="value3" name="group4">
-                        Wrong <input type="radio" value="value4" name="group4">
-                      </fieldset>
+            <h2>Timer: <span id="timer">60</span> seconds</h2>
+            <hr />
+            <form>
+              <h3 class="mt-3">What color is Mars?</h3>
+              <input type="radio" name="ques1" value="1" id="question1" /> Red 
+              <input type="radio" name="ques1" value="2" class="wrong"/> Blue 
+              <input type="radio" name="ques1" value="3" class="wrong"/> Green 
+              <input type="radio" name="ques1" value="4" class="wrong"/> Purple 
 
 
-                      <h4>Right</h4>                
-                      <fieldset id="group5" class="mb-3">
-                          Right <input id="correct5" type="radio" value="value1" name="group5">
-                          Wrong <input type="radio" value="value2" name="group5">
-                          Wrong <input type="radio" value="value3" name="group5">
-                          Wrong <input type="radio" value="value4" name="group5">
-                        </fieldset>
-                </form>
+              <h3 class="mt-3">Is pluto a planet?</h3>
+              <input type="radio" name="ques2" value="1" class="wrong"/> Yes 
+              <input type="radio" name="ques2" value="2" id="question2"/> No 
+
+              <h3 class="mt-3">What planet has life?</h3>
+              <input type="radio" name="ques3" value="1" class="wrong"/> Uranus 
+              <input type="radio" name="ques3" value="2" class="wrong"/> Mars 
+              <input type="radio" name="ques3" value="3" id="question3"/> Earth 
+              <input type="radio" name="ques3" value="4" class="wrong"/> Mercury 
+
+              <h3 class="mt-3">How many moons does Mars have?</h3>
+              <input type="radio" name="ques4" value="1" class="wrong"/> 1 
+              <input type="radio" name="ques4" value="2" id="question4"/> 2 
+              <input type="radio" name="ques4" value="3" class="wrong"/> 3 
+              <input type="radio" name="ques4" value="4" class="wrong"/>4 
+
+              <h3 class="mt-3">Which planet has the most moons?</h3>
+              <input type="radio" name="ques5" value="1" class="wrong"/> Neptune 
+              <input type="radio" name="ques5" value="2" class="wrong"/> Uranus 
+              <input type="radio" name="ques5" value="3" class="wrong"/> Saturn 
+              <input type="radio" name="ques5" value="4" id="question5" /> Jupiter 
+
+              
+            </form>
           </div>
           <a href="#" class="btn btn-primary" id="submit">Submit</a>
         </div>

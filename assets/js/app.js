@@ -6,7 +6,7 @@ var number = 60;
 var intervalId;
 var correct = 0;
 var incorrect = 0;
-var result = correct/(correct+incorrect);
+var result = correct / (correct + incorrect);
 
 $("#beginTimer").on("click", run);
 $("#submit").on("click", submit);
@@ -31,6 +31,8 @@ function submit() {
 function restart() {
   $("#finish").hide();
   $("#start").show();
+  correct = 0;
+  incorrect = 0;
 }
 
 function decrement() {
@@ -48,10 +50,49 @@ function stop() {
 }
 
 
+$('#question1').click(function () {
+  if ($('#question1').is(':checked')) {
+    correct = correct + 1;
+    $("#correct").html(correct);
+  }
+});
 
+$('#question2').click(function () {
+  if ($('#question2').is(':checked')) {
+    correct = correct + 1;
+    $("#correct").html(correct);
+  }
+});
+
+$('#question3').click(function () {
+  if ($('#question3').is(':checked')) {
+    correct = correct + 1;
+    $("#correct").html(correct);
+  }
+});
+
+$('#question4').click(function () {
+  if ($('#question4').is(':checked')) {
+    correct = correct + 1;
+    $("#correct").html(correct);
+  }
+});
+
+$('#question5').click(function () {
+  if ($('#question5').is(':checked')) {
+    correct = correct + 1;
+    $("#correct").html(correct);
+  }
+});
+
+$('.wrong').click(function () {
+  if ($('.wrong').is(':checked')) {
+    incorrect = incorrect + 1;
+    $("#wrong").html(incorrect);
+  }
+});
 
 
 $("#correct").html(correct);
 $("#wrong").html(incorrect);
 $("#final").html(result);
-
