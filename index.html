@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <!--Start Screen-->
+    <div class="container mt-5" id="start">
+      <div class="card text-center">
+        <div class="card-header"><h1>Space Trivia</h1></div>
+        <div class="card-body">
+          <p class="card-text">
+            Press the button to start the timer. You have 1 minute to choose all
+            your answers!
+          </p>
+          <a href="#" class="btn btn-primary" id="beginTimer">Start</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Question Page-->
+    <div class="container mt-5" id="test">
+      <div class="card text-center">
+        <div class="card-header"><h1>Space Questions</h1></div>
+        <div class="card-body">
+          <div class="container mb-3">
+              <h2>Timer: <span id="timer">60</span> seconds</h2>
+              <hr>
+              <form>
+                  <h4>Number 5:</h4>
+                  <fieldset id="group1" class="mb-3">
+                    1 <input type="radio" value="value1" name="group1">
+                    2 <input type="radio" value="value2" name="group1">
+                    3 <input type="radio" value="value3" name="group1">
+                    5 <input id="correct1" type="radio" value="value4" name="group1">
+                  </fieldset>
+
+                  <h4>Color Green:</h4>                
+                  <fieldset id="group2" class="mb-3">
+                    Green <input id="correct2" type="radio" value="value1" name="group2">
+                    Blue <input type="radio" value="value2" name="group2">
+                    Silver <input type="radio" value="value3" name="group2">
+                    Brown <input type="radio" value="value4" name="group2">
+                  </fieldset>
+
+                  <h4>Right</h4>                
+                  <fieldset id="group3" class="mb-3">
+                      Wrong <input type="radio" value="value1" name="group3">
+                      Wrong <input type="radio" value="value2" name="group3">
+                      Right <input id="correct3" type="radio" value="value3" name="group3">
+                      Wrong <input type="radio" value="value4" name="group3">
+                    </fieldset>
+
+                    <h4>Right</h4>                
+                    <fieldset id="group4" class="mb-3">
+                        Right <input id="correct4" type="radio" value="value1" name="group4">
+                        Wrong <input type="radio" value="value2" name="group4">
+                        Wrong <input type="radio" value="value3" name="group4">
+                        Wrong <input type="radio" value="value4" name="group4">
+                      </fieldset>
+
+
+                      <h4>Right</h4>                
+                      <fieldset id="group5" class="mb-3">
+                          Right <input id="correct5" type="radio" value="value1" name="group5">
+                          Wrong <input type="radio" value="value2" name="group5">
+                          Wrong <input type="radio" value="value3" name="group5">
+                          Wrong <input type="radio" value="value4" name="group5">
+                        </fieldset>
+                </form>
+          </div>
+          <a href="#" class="btn btn-primary" id="submit">Submit</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Final Score-->
+    <div class="container mt-5 mb-5" id="finish">
+      <div class="card text-center">
+        <div class="card-header"><h1>Score</h1></div>
+        <div class="card-body">
+          <p class="card-text">Correct: <span id="correct"></span></p>
+          <p class="card-text">Wrong: <span id="wrong"></span></p>
+          <p class="card-text">Final Score: <span id="final"></span></p>
+          <a href="#" class="btn btn-primary" id="restart">Restart</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
